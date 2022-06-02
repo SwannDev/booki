@@ -9,22 +9,19 @@ body
 	background-color: white;
 	padding: 0;
 	margin: 0;
-	color: white;
+	color: black;
 
 }
 
 .logo
 {
-
-	
 	margin-top: 5%;
-	
 }
 
 
 header 
 {
-  margin-left: 4%;
+  padding-left: 3.5%;
 	color: black;
 }
 
@@ -44,7 +41,6 @@ header
   font-size: 15px;
   cursor: pointer;
   outline: none;
-
 }
 
 body .buttons .activités
@@ -52,6 +48,14 @@ body .buttons .activités
 	margin-top: 3%;
    background-color: inherit;
    margin-right: 10px;
+   color:  #1b4fde;
+   font-size: 130%;
+}
+
+body .buttons .activités:hover
+{
+ text-decoration: overline;
+
    color:  #1b4fde;
    font-size: 130%;
 }
@@ -67,6 +71,14 @@ body .buttons .hébergements
    font-size: 130%;
 }
 
+body .buttons .hébergements:hover
+{
+ text-decoration: overline;
+ 
+   color:  #1b4fde;
+   font-size: 130%;
+}
+
 nav .logo{
  left: 0px !important;
   
@@ -76,17 +88,9 @@ nav .logo{
   
  }
 
-nav .buttons .activités
-{
-   background-color: #f54266;
-   margin-right: 10px;
-   color:  black;
 
 
-}
 
-
-/* FIN HEADER */ 
 
 /* Barre de recherche */
 .research-box {
@@ -202,53 +206,117 @@ nav .buttons .activités
 
 /* Fin Filtres */
 
-/* Grid hébergements */
+/* FIN HEADER */ 
 
-grid-template-areas: none;
+/* Début Hébergements Marseille */
+.housing-list
+{
+ background: #F2F2F2;
+ background-size: cover;
+  border-radius: 25px 25px;
 
-/* Valeurs de chaînes */
-/* Type <string>      */
-grid-template-areas: "a b";
-
-
-/* Valeurs globales */
-grid-template-areas: space-between
-grid-template-areas: initial;
-grid-template-areas: unset;
-
-
-/* Logements Marseille */
-
-
-
-.main-box {
-  display: grid;
-  grid-template-columns: 1.9fr 1fr;
-  column-gap: 30px;
-  margin: 40px 0 60px 0;
 }
 
-.box {
-  background: #F2F2F2;
-  border-radius: 25px;
+#housing {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
 }
 
-.box-accomodation {
-  display: flex;
-  justify-content: center;
-  
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 60%;
- 
+#housing section .container {
+    background-color: var(--grey);
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    height: calc(100% - 120px);
+    box-sizing: content-box;
 }
 
-.box-accomodation .push-to-right {
+.housing-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.housing-list a {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.housing-list a article {
+    background-color: white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.housing-list a article:hover {
+   /* box-shadow: 5px 5px 5px 0px #E2E2E2; */
+
+    cursor: pointer;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+
+.title-h2 push-to-right {
   display: block;
   width: 100%;
   margin-left: 40px;
 }
 
+.housing-list a article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+
+.housing-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.housing-list a .stars {
+    color: blue !important;
+    text-decoration: none;
+}
+
+
+.housing-list a article .article-content {
+    padding: 10px 10px 0px 10px;
+}
+
+.housing-list a article .article-content h3,
+.housing-list a article .article-content p {
+    margin: 6px;
+}
+
+
+
+#housing .housing-marseille {
+    width: 60%;
+}
+
+#housing .housing-marseille .subtitle {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+.show-more {
+ 
+  color: black;
+  font-weight: bold;
+  padding-left: 40px;
+  
+}
+
+.show-more:hover {
+ 
+  text-decoration: underline;
+  
+}
+/*
 .box-most-popular {
   display: flex;
   justify-content: center;
@@ -257,8 +325,12 @@ grid-template-areas: unset;
 
 
 
+.case-text .hotel-name
+{
+text-decoration: none !important;
 
 
+}
 
 
 .housing ul li:hover {
@@ -413,6 +485,7 @@ text-decoration: none;
   color: black;
   font-weight: bold;
   left: 20px;
+  
 }
 
 
@@ -480,132 +553,47 @@ text-decoration: none;
   display: grid;
   width: 100%;
   height: 250px;
-  grid-template-areas: "box box-accomodation  popular-box box-accomodation"
+  grid-template-areas: "housing-marseille populaire"
                        "activite ";
-  grid-template-rows: 50px 1fr 30px;
-  grid-template-columns: 150px 1fr;
-}
-
-#page > header {
-  grid-area: head;
   
 }
 
-#page > nav {
-  grid-area: nav;
-  
-}
 
-#page > main {
-  grid-area: main;
- 
-}
-
-#page > footer {
-  grid-area: foot;
-  background-color: #8cffa0;
 }
 
 /* FIN Grid Logements / Les plus populaires */
 
 /* Les plus populaires */
-.main-popular-box {
-  display: grid;
-  grid-template-columns: 1.9fr 1fr;
-  column-gap: 30px;
-  margin: 40px 0 60px 0;
-}
-
-.popular-box {
-  background: #F2F2F2;
-  border-radius: 25px;
-}
-
-#housingpop {
-    display: flex;
-    justify-content: space-between;
-}
-
-.housingpop-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.housingpop-list a {
-    width: 30%;
-    margin-bottom: 50px;
-}
-
-.housingpop-list a article {
-    background-color: white;
-    padding: 6px;
-    border-radius: 25px;
-    height: 100%;
-}
-
-.housingpop-list a article:hover {
-    box-shadow: 5px 5px 5px 0px #E2E2E2;
-}
-
-.housingpop-list a article .fa-star.blue {
-    color: var(--blue);
-}
-
-.housingpop-list a article .fa-star.grey {
-    color: var(--grey);
-}
-
-.housingpop-list a article img {
-    width: 100%;
-    height: 200px;
-    border-radius: 25px 25px 0px 0px;
-    object-fit: cover;
-}
-
-.housingpop-list a {
-    color: black;
-    text-decoration: none;
-}
-
-.housingpop-list a article .article-content {
-    padding: 10px 10px 0px 10px;
-}
-
-
-
-
-
-#housingpop .populaire .chart-icone {
+#housing .populaire .chart-icone {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-#housingpop .populaire {
+#housing .populaire {
     width: 35%;
     position: relative;
 }
 
-#housingpop .populaire .housingpop-list {
+#housing .populaire .housing-list {
     flex-direction: column;
 }
 
-#housingpop .populaire .housingpop-list a {
+#housing .populaire .housing-list a {
     width: 100%;
 }
 
-#housingpop .populaire .housingpop-list a article {
+#housing .populaire .housing-list a article {
     display: flex;
     flex-direction: row;
 }
 
-#housingpop .populaire .housingpop-list a article img {
+#housing .populaire .housing-list a article img {
     border-radius: 25px 0px 0px 25px;
     width: 35%;
 }
 
-#housingpop .populaire .housingpop-list a article .article-content {
+#housing .populaire .housing-list a article .article-content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -618,6 +606,8 @@ text-decoration: none;
 
 
 #activite {
+  padding-left: 3.5%;
+  padding-top: 20px;
     margin-bottom: 60px;
     margin-right: 50px;
 }
@@ -662,15 +652,7 @@ text-decoration: none;
 
 /* Les plus populaires */
 
-footer
-{
-	background-color: black;
-	padding: 25px 100px;
-	color: #828282;
-	bottom: 0px;
-  
 
-}
 
 
 /* Pied de page */
@@ -685,11 +667,11 @@ footer
 
 footer
 {
-	background-color: #e9ebe8;
-	padding: 25px 50px;
-	margin-right: 15%;
-	color: black;
-	margin-bottom: 1px;
+  background-color: #e9ebe8;
+  padding-left: 10px;
+  margin-right: 15%;
+  color: black;
+  margin-bottom: 1px;
  
 
 }
@@ -743,3 +725,35 @@ footer p
 }
 
 /* FIN Adaptation mobile */
+
+/* ajout papa  : 
+  la classe main-box n'étati pas définie
+  j'ai ajouté l'identifiant #hebergements-box  : car quand tu as un style qui ne doit servir qu'à un élément précis par page, il faut utiliser un identifiant plutôt qu'une classe
+  ->l'identifiant ne sert que pour un seul élément dans une page 
+*/
+
+.wrapper {
+  display : inline-flex;
+}
+
+.main-box {
+display:  contents;
+
+}
+
+.main-box {
+  
+}
+
+#hebergements-box {
+
+}
+
+/* ligne 530 : 
+.housingpop-list {
+  display: grid ;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+*/
+
