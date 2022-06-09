@@ -32,6 +32,12 @@ header
 	padding-left: 70%;
   }
 
+  body .buttons 
+  {
+   padding: 30 30 0 30;
+
+  }
+
   body .buttons button
 {
 	padding: 13px 20px;
@@ -54,9 +60,9 @@ body .buttons .activités
 
 body .buttons .activités:hover
 {
- text-decoration: overline;
+border-top: 3px solid;
 
-   color:  #1b4fde;
+  
    font-size: 130%;
 }
 
@@ -73,9 +79,9 @@ body .buttons .hébergements
 
 body .buttons .hébergements:hover
 {
- text-decoration: overline;
+ border-top: 3px solid;
  
-   color:  #1b4fde;
+  
    font-size: 130%;
 }
 
@@ -147,8 +153,6 @@ nav .logo{
 
 
 
-
-
 /* FIN Barre de recherche */
 
 
@@ -214,6 +218,7 @@ nav .logo{
  background: #F2F2F2;
  background-size: cover;
   border-radius: 25px 25px;
+  padding: 30px;
 
 }
 
@@ -221,6 +226,7 @@ nav .logo{
     display: flex;
     justify-content: space-between;
     padding-left: 3%;
+    margin-right: 50px;
 }
 
 #housing section .container {
@@ -703,7 +709,46 @@ footer p
 
 /* Adaptation mobile */
 
-@media screen and (max-width: 640px)
+@media screen and (max-width: 768px) {
+    header {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+    }
+    
+    #logo {
+        margin:25px 0px 0px 45px;
+    }
+
+    nav {
+        display: flex;
+        margin: 25px 0px 15px 0px;
+        width:100%;
+        text-align:center;
+    }
+    
+
+    #box-accommodation {
+        flex-direction: column-reverse;
+        gap: 25px;  
+    }
+
+    main 
+    {
+        margin: 0;
+    }
+
+  
+    #activités 
+    {
+      margin: 0 12px;
+    }
+
+   
+   
+/*@media screen and (max-width: 640px)
 {
 
 	body .page{
