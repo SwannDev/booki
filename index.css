@@ -707,7 +707,7 @@ footer p
 
 
 
-/* Adaptation mobile */
+/* Adaptation mobile 
 
 @media screen and (max-width: 768px) {
     header {
@@ -746,7 +746,9 @@ footer p
       margin: 0 12px;
     }
 
-   
+   */
+
+
    
 /*@media screen and (max-width: 640px)
 {
@@ -801,4 +803,3 @@ display:  contents;
   justify-content: space-between;
 }
 */
-
