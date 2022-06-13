@@ -1,0 +1,805 @@
+/* Police de caractere */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body
+{
+	
+	font-family: 'Lato', sans-serif;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	color: black;
+
+}
+
+.logo
+{
+	margin-top: 5%;
+}
+
+
+header 
+{
+  padding-left: 3.5%;
+	color: black;
+}
+
+.connection
+{ 
+
+	padding-top: 0px;
+	padding-left: 70%;
+  }
+
+  body .buttons 
+  {
+   padding: 30 30 0 30;
+
+  }
+
+  body .buttons button
+{
+	padding: 13px 20px;
+  
+  border: none;
+  
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+body .buttons .activités
+{
+	margin-top: 3%;
+   background-color: inherit;
+   margin-right: 10px;
+   color:  #1b4fde;
+   font-size: 130%;
+}
+
+body .buttons .activités:hover
+{
+border-top: 3px solid;
+
+  
+   font-size: 130%;
+}
+
+
+
+body .buttons .hébergements
+{
+	margin-top: 3%;
+   background-color: inherit;
+   margin-right: 10px;
+   color:  #1b4fde;
+   font-size: 130%;
+}
+
+body .buttons .hébergements:hover
+{
+ border-top: 3px solid;
+ 
+  
+   font-size: 130%;
+}
+
+nav .logo{
+ left: 0px !important;
+  
+ padding: 0px !important;
+    /* Ordre de priorité de superposition */
+ 
+  
+ }
+
+
+
+
+
+/* Barre de recherche */
+.research-box {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.icon-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: auto;
+  background-color: #F2F2F2;
+  border-radius: 14px 0 0 14px;
+}
+
+.fa-map-marker-alt {
+  font-size: 17px;
+}
+
+.research-bar {
+  padding: 0 0 0 20px;
+  height: 50px;
+  width: 220px;
+  border: none;
+  border-top: solid 1px #F2F2F2;
+  border-bottom: solid 1px #F2F2F2;
+}
+
+.research-bar::placeholder {
+  color: rgb(170, 170, 170);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-research {
+  border: none;
+  border-radius: 0 14px 14px 0;
+  background-color: #0065fc;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.button-research:hover {
+  background-color: #003c96;
+  transition: ease 0.3s;
+}
+
+
+
+/* FIN Barre de recherche */
+
+
+/* DEBUT Filtres */
+
+.filters h3 {
+  font-size: 24px;
+  display: inline;
+}
+
+.filters ul {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.filters ul li {
+  display: inline;
+  margin-left: 25px;
+  font-weight: 700;
+  border: solid 2px #e2e2e2;
+  padding: 0 20px 0 0;
+  margin-top: 10px;
+  border-radius: 200px;
+}
+
+.filters ul li:hover {
+  cursor: pointer;
+  background: #DEEBFF;
+  transition-duration: 0.25s;
+}
+
+.filters ul li:hover .icon-filter {
+  background: white;
+  transition-duration: 0.25s;
+}
+
+.icon-filter {
+  background-color: #DEEBFF;
+  color: #0065fc;
+  padding: 18px;
+  border-radius: 200px;
+  margin-right: 15px;
+}
+
+.info .fas {
+  color: #0065fc;
+  font-size: 16px;
+  padding: 7px 11px 7px 11px;
+  border: solid 1px #D9D9D9;
+  border-radius: 2000px;
+  margin-right: 20px;
+}
+
+/* Fin Filtres */
+
+/* FIN HEADER */ 
+
+/* Début Hébergements Marseille */
+.housing-list
+{
+ background: #F2F2F2;
+ background-size: cover;
+  border-radius: 25px 25px;
+  padding: 30px;
+
+}
+
+#housing {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    margin-right: 50px;
+}
+
+#housing section .container {
+    background-color: var(--grey);
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    height: calc(100% - 120px);
+    box-sizing: content-box;
+}
+
+.housing-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.housing-list a {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.housing-list a article {
+    background-color: white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.housing-list a article:hover {
+   /* box-shadow: 5px 5px 5px 0px #E2E2E2; */
+
+    cursor: pointer;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+
+.title-h2 push-to-right {
+  display: block;
+  width: 100%;
+  margin-left: 40px;
+}
+
+.housing-list a article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+
+.housing-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.housing-list a .stars {
+    color: blue !important;
+    text-decoration: none;
+}
+
+
+.housing-list a article .article-content {
+    padding: 10px 10px 0px 10px;
+}
+
+.housing-list a article .article-content h3,
+.housing-list a article .article-content p {
+    margin: 6px;
+}
+
+
+
+#housing .housing-marseille {
+    width: 60%;
+}
+
+#housing .housing-marseille .subtitle {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+.show-more {
+ 
+  color: black;
+  font-weight: bold;
+  padding-left: 40px;
+  
+}
+
+.show-more:hover {
+ 
+  text-decoration: underline;
+  
+}
+/*
+.box-most-popular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.case-text .hotel-name
+{
+text-decoration: none !important;
+
+
+}
+
+
+.housing ul li:hover {
+  cursor: pointer;
+  background: #DEEBFF;
+  transition-duration: 0.25s;
+}
+
+.housing ul li:hover .icon-filter {
+  background: white;
+  transition-duration: 0.25s;
+}
+
+
+.case-text .hotel-price {
+  margin: 3px 0 3px 0;
+}
+
+
+.hostingMainCardGradeIcon {
+  color: #0065fc;
+}
+
+.hostingMainCardGradeIconEmpty {
+  color: #D9D9D9;
+}
+
+
+.marseille-housing {
+
+  height: 550px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+  grid-gap: 30px;
+  padding: 20px 20px 20px 20px;
+  grid-template-areas: 
+    "housing-1 housing-2 housing-4 housing-5"
+    "housing-1 housing-2 housing-4 housing-5"
+    "housing-1 housing-2 housing-4 housing-6"
+    "housing-1 housing-2 housing-4 housing-6"
+    "housing-1 housing-3 housing-4 housing-6"
+    "housing-1 housing-3 housing-4 housing-6";
+}
+
+p, h3 { 
+ text-decoration: none !important;
+  color: black;
+  font-weight: bold;
+
+ }
+
+ marseille-case a{
+
+text-decoration: none;
+ }
+
+ 
+
+
+.marseille-cases {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 27px;
+  padding: 0 0 0 0;
+}
+
+
+.housing ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 27px;
+  height: 315px;
+  flex-basis: 33.33333%;
+  padding: 0 0 0 0;
+}
+
+.marseille-case {
+  background: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+
+
+
+.marseille-case:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+.marseille-case .marseille-case-img {
+  width: 250px;
+  height: 100px;
+  background-size: 100% 100%;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.marseille-case img {
+  width: 100%;
+  height: 100px;
+  background-size: 100% 100%;
+  border-radius: 20px 20px 20px 20px;
+  object-fit: cover;
+}
+
+.marseille-case .case-text {
+  margin: 5px;
+}
+
+.marseille-case .case-text .hotel-name {
+  margin: 0;
+}
+
+
+
+#housing-1 {
+    grid-area: housing-1;
+  }
+  #housing-2 {
+    grid-area: housing-2;
+  }
+  #housing-3 {
+    grid-area: housing-3;
+  }
+  #housing-4 {
+    grid-area: housing-4;
+  }
+  #housing-5 {
+    grid-area: housing-5;
+  }
+  #housing-6 {
+    grid-area: housing-6;
+  }
+
+
+
+  .most-popular-case-img img {
+    min-width: 80px;
+  }
+
+.show-more a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  left: 20px;
+  
+}
+
+
+
+.hebergement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergement-list a {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.hebergement-list a article {
+    background-color: white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.hebergement-list a article:hover {
+    box-shadow: 5px 5px 5px 0px #E2E2E2;
+}
+
+.hebergement-list a article .fa-star.blue {
+    color: var(--blue);
+}
+
+.hebergement-list a article .fa-star.grey {
+    color: var(--grey);
+}
+
+.hebergement-list a article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+
+.hebergement-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.hebergement-list a article .article-content {
+    padding: 10px 10px 0px 10px;
+}
+
+.hebergement-list a article .article-content h3,
+.hebergement-list a article .article-content p {
+    margin: 6px;
+}
+
+
+}
+
+/* Fin Logements */
+
+
+/* Grid Logements / Les plus populaires */
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-areas: "housing-marseille populaire"
+                       "activite ";
+  
+}
+
+
+}
+
+/* FIN Grid Logements / Les plus populaires */
+
+/* Les plus populaires */
+#housing .populaire .chart-icone {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#housing .populaire {
+    width: 35%;
+    position: relative;
+}
+
+#housing .populaire .housing-list {
+    flex-direction: column;
+}
+
+#housing .populaire .housing-list a {
+    width: 100%;
+}
+
+#housing .populaire .housing-list a article {
+    display: flex;
+    flex-direction: row;
+}
+
+#housing .populaire .housing-list a article img {
+    border-radius: 25px 0px 0px 25px;
+    width: 35%;
+}
+
+#housing .populaire .housing-list a article .article-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Fin les plus populaires */
+
+
+/* Activités à Marseille */
+
+
+#activite {
+  padding-left: 3.5%;
+  padding-top: 20px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+}
+
+.activite-list {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.activite-list .column {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.activite-list .column article img {
+    width: 100%;
+    height: calc(100% - 67px);
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activite-list .column article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+}
+
+.activite-list .column article h3 {
+    padding: 21px;
+    margin: 0px;
+}
+
+.activite-list .column.double article {
+    height: 48%;
+}
+
+/* Fin activités */
+
+/* Les plus populaires */
+
+
+
+
+/* Pied de page */
+
+.page .colonnes
+{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer
+{
+  background-color: #e9ebe8;
+  padding-left: 10px;
+  margin-right: 15%;
+  color: black;
+  margin-bottom: 1px;
+ 
+
+}
+
+footer .colonnes
+{
+flex-wrap: ;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .colonnes p{
+
+	color: black;
+
+}
+
+footer p
+{ 
+
+}
+
+
+
+/* FIN Pied de page */
+
+
+
+/* Adaptation mobile 
+
+@media screen and (max-width: 768px) {
+    header {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+    }
+    
+    #logo {
+        margin:25px 0px 0px 45px;
+    }
+
+    nav {
+        display: flex;
+        margin: 25px 0px 15px 0px;
+        width:100%;
+        text-align:center;
+    }
+    
+
+    #box-accommodation {
+        flex-direction: column-reverse;
+        gap: 25px;  
+    }
+
+    main 
+    {
+        margin: 0;
+    }
+
+  
+    #activités 
+    {
+      margin: 0 12px;
+    }
+
+   */
+
+
+   
+/*@media screen and (max-width: 640px)
+{
+
+	body .page{
+		margin: 10px;
+	}
+	header{
+		margin-top: 20px;
+		background-size: 250px 250px;
+
+	}
+	h1{
+		font-size: 30px;
+		padding: 100px;
+	}
+	nav .onglets{
+    display: none;
+
+	}
+}
+
+/* FIN Adaptation mobile */
+
+/* ajout papa  : 
+  la classe main-box n'étati pas définie
+  j'ai ajouté l'identifiant #hebergements-box  : car quand tu as un style qui ne doit servir qu'à un élément précis par page, il faut utiliser un identifiant plutôt qu'une classe
+  ->l'identifiant ne sert que pour un seul élément dans une page 
+*/
+
+.wrapper {
+  display : inline-flex;
+}
+
+.main-box {
+display:  contents;
+
+}
+
+.main-box {
+  
+}
+
+#hebergements-box {
+
+}
+
+/* ligne 530 : 
+.housingpop-list {
+  display: grid ;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+*/

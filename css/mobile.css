@@ -1,0 +1,74 @@
+/* CSS Mobile */
+
+   body {
+    padding: 0px 20px;
+}
+
+header {
+    flex-direction: column;
+}
+
+header #logo {
+    margin: auto;
+}
+
+header nav ul {
+    margin: 0px -20px;
+    padding: 0;
+}
+
+header nav ul li {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+    border-top: none;
+    border-bottom: 2px solid var(--grey);
+}
+
+.research-box button-research {
+    border-radius: 15px;
+}
+
+.research-box button-research span {
+    display: none;
+}
+
+.research-box button-research .fa-search {
+    display: block;
+}
+
+#filters {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#housing .marseille {
+    order: 2;
+}
+
+#housing .populaire {
+    order: 1;
+}
+
+#housing .marseille .hebergement-list {
+    flex-direction: column;
+}
+
+#housing .housing-marseille .housing-list a {
+    width: 100%;
+}
+
+#activite .activite-list .column {
+    width: 100%;
+}
+
+.activite-list .column article,
+.activite-list .column.double article {
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+footer {
+    flex-direction: column;
+}
