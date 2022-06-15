@@ -8,6 +8,12 @@
     flex-direction: column;
 }
 
+#housing {
+
+    padding-left: 0% !important;
+    margin-right: 0% !important;
+}
+
 #housing .housing-marseille,
 #housing .populaire {
     width: 100%;

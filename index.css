@@ -215,23 +215,21 @@ nav .logo{
 /* Début Hébergements Marseille */
 .housing-list
 {
- background: #F2F2F2;
- background-size: cover;
-  border-radius: 25px 25px;
-  padding: 30px;
+ 
+
 
 }
 
 #housing {
     display: flex;
     justify-content: space-between;
-    padding-left: 3%;
+    padding-left: 2.5%;
     margin-right: 50px;
 }
 
 #housing section .container {
     background-color: var(--grey);
-    padding: 20px 20px 10px 20px;
+    
     border-radius: 20px;
     height: calc(100% - 120px);
     box-sizing: content-box;
@@ -241,6 +239,7 @@ nav .logo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .housing-list a {
@@ -274,7 +273,7 @@ nav .logo{
     width: 100%;
     height: 200px;
     border-radius: 25px 25px 0px 0px;
-    object-fit: cover;
+   /* object-fit: cover;   */
 }
 
 .housing-list a {
@@ -297,10 +296,21 @@ nav .logo{
     margin: 6px;
 }
 
+#article
+{
+
+    max-height: 250px;
+    max-width: 250px;
+}
 
 
 #housing .housing-marseille {
-    width: 60%;
+   max-width: 59%;
+
+   background-color: #F2F2F2;
+ background-size: cover;
+  border-radius: 25px 25px;
+  padding: 15px 15px;
 }
 
 #housing .housing-marseille .subtitle {
@@ -579,6 +589,11 @@ text-decoration: none;
 #housing .populaire {
     width: 35%;
     position: relative;
+
+    background-color: #F2F2F2;
+ background-size: cover;
+  border-radius: 25px 25px;
+  padding: 15px 15px;
 }
 
 #housing .populaire .housing-list {
@@ -612,10 +627,10 @@ text-decoration: none;
 
 
 #activite {
-  padding-left: 3.5%;
+  padding-left: 2.5%;
   padding-top: 20px;
     margin-bottom: 60px;
-    margin-right: 50px;
+    padding-right: 2.5%;
 }
 
 .activite-list {
@@ -662,6 +677,13 @@ text-decoration: none;
 
 
 /* Pied de page */
+.colonnes
+{
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 
 .page .colonnes
 {
@@ -674,8 +696,7 @@ text-decoration: none;
 footer
 {
   background-color: #e9ebe8;
-  padding-left: 10px;
-  margin-right: 15%;
+  
   color: black;
   margin-bottom: 1px;
  

@@ -1,7 +1,34 @@
-/* CSS Tablette */
+/* CSS Mobile */
 
    body {
-    padding: 0px 20px;
+    padding: 0px 0px;
+}
+
+#housing {
+
+    padding-left: 0% !important;
+    margin-right: 0% !important;
+}
+
+#housing-marseille {
+
+    padding-left: 0% !important;
+    margin-right: 0% !important;
+}
+
+#housing .housing-marseille
+{
+ padding-left: 0% !important;
+    margin-right: 0% !important;
+
+}
+
+
+
+#activite {
+
+    padding: 0%;
+    margin: 0%;
 }
 
 header {
@@ -45,17 +72,31 @@ header nav ul li {
 
 #housing .marseille {
     order: 2;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    
 }
 
 #housing .populaire {
     order: 1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
+
+#housing .housing-marseille {
+   max-width: 100%; 
+}
+
+.housing-marseille > div > div > a > article > img {
+
+}
+
 
 #housing .marseille .hebergement-list {
     flex-direction: column;
 }
 
-#housing .housing-marseille .housing-list a {
+#housing .housing-marseille a {
     width: 100%;
 }
 
