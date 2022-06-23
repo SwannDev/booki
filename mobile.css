@@ -72,15 +72,13 @@ header nav ul li {
 
 #housing .marseille {
     order: 2;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+   
     
 }
 
 #housing .populaire {
     order: 1;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    
 }
 
 #housing .housing-marseille {
@@ -113,3 +111,4 @@ header nav ul li {
 footer {
     flex-direction: column;
 }
+

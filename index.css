@@ -2,80 +2,61 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body
-{
-	
-	font-family: 'Lato', sans-serif;
-	background-color: white;
-	padding: 0;
-	margin: 0;
-	color: black;
-
+body {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0px 50px;
+    font-size: 18px;
 }
 
-.logo
-{
-	margin-top: 5%;
+h1 {
+    font-size: 150%;
 }
 
-
-header 
-{
-  padding-left: 3.5%;
-	color: black;
+h2 {
+    font-size: 120%;
+    ;
 }
 
-.connection
-{ 
-
-	padding-top: 0px;
-	padding-left: 70%;
-  }
-
-  body .buttons 
-  {
-   padding: 30 30 0 30;
-
-  }
-
-  body .buttons button
-{
-	padding: 13px 20px;
-  
-  border: none;
-  
-  font-size: 15px;
-  cursor: pointer;
-  outline: none;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
 }
 
-body .buttons .activités
-{
-	margin-top: 3%;
-   background-color: inherit;
-   margin-right: 10px;
-   color:  #1b4fde;
-   font-size: 130%;
+header #logo {
+    padding: 25px 0px;
 }
 
-body .buttons .activités:hover
-{
-border-top: 3px solid;
-
-  
-   font-size: 130%;
+header #logo img {
+    width: 150px;
 }
 
-
-
-body .buttons .hébergements
-{
-	margin-top: 3%;
-   background-color: inherit;
-   margin-right: 10px;
-   color:  #1b4fde;
-   font-size: 130%;
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
 }
+
+header nav ul li {
+    padding: 50px 25px;
+    border-top: 4px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+
+header nav ul li:hover {
+    border-color: var(--blue);
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li:hover a {
+    color: var(--blue);
+}
+
 
 body .buttons .hébergements:hover
 {
@@ -85,20 +66,35 @@ body .buttons .hébergements:hover
    font-size: 130%;
 }
 
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li {
+    padding: 50px 25px;
+    border-top: 4px solid transparent;
+    margin: 0px 20px 0px 20px;
+    color: blue;
+}
+
+
+
+
+
 nav .logo{
  left: 0px !important;
   
  padding: 0px !important;
-    /* Ordre de priorité de superposition */
  
-  
  }
 
 
 
 
 
-/* Barre de recherche */
+ 
 .research-box {
   display: inline-flex;
   flex-direction: row;
@@ -152,11 +148,7 @@ nav .logo{
 }
 
 
-
-/* FIN Barre de recherche */
-
-
-/* DEBUT Filtres */
+ 
 
 .filters h3 {
   font-size: 24px;
@@ -208,11 +200,8 @@ nav .logo{
   margin-right: 20px;
 }
 
-/* Fin Filtres */
+ 
 
-/* FIN HEADER */ 
-
-/* Début Hébergements Marseille */
 .housing-list
 {
  
@@ -255,7 +244,7 @@ nav .logo{
 }
 
 .housing-list a article:hover {
-   /* box-shadow: 5px 5px 5px 0px #E2E2E2; */
+    box-shadow: 5px 5px 5px 0px #E2E2E2; 
 
     cursor: pointer;
   transform: scale(1.03);
@@ -273,19 +262,21 @@ nav .logo{
     width: 100%;
     height: 200px;
     border-radius: 25px 25px 0px 0px;
-   /* object-fit: cover;   */
+    object-fit: cover;   
 }
 
-.housing-list a {
+.housing-list a{
     color: black;
     text-decoration: none;
 }
 
-.housing-list a .stars {
-    color: blue !important;
-    text-decoration: none;
+.fa-star.blue {
+    color: var(--blue) !important;
 }
 
+.fa-star.grey {
+    color: var(--grey)!important;
+}
 
 .housing-list a article .article-content {
     padding: 10px 10px 0px 10px;
@@ -332,238 +323,10 @@ nav .logo{
   text-decoration: underline;
   
 }
-/*
-.box-most-popular {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
-
-.case-text .hotel-name
-{
-text-decoration: none !important;
-
-
-}
-
-
-.housing ul li:hover {
-  cursor: pointer;
-  background: #DEEBFF;
-  transition-duration: 0.25s;
-}
-
-.housing ul li:hover .icon-filter {
-  background: white;
-  transition-duration: 0.25s;
-}
-
-
-.case-text .hotel-price {
-  margin: 3px 0 3px 0;
-}
-
-
-.hostingMainCardGradeIcon {
-  color: #0065fc;
-}
-
-.hostingMainCardGradeIconEmpty {
-  color: #D9D9D9;
-}
-
-
-.marseille-housing {
-
-  height: 550px;
-  margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
-  grid-gap: 30px;
-  padding: 20px 20px 20px 20px;
-  grid-template-areas: 
-    "housing-1 housing-2 housing-4 housing-5"
-    "housing-1 housing-2 housing-4 housing-5"
-    "housing-1 housing-2 housing-4 housing-6"
-    "housing-1 housing-2 housing-4 housing-6"
-    "housing-1 housing-3 housing-4 housing-6"
-    "housing-1 housing-3 housing-4 housing-6";
-}
-
-p, h3 { 
- text-decoration: none !important;
-  color: black;
-  font-weight: bold;
-
- }
-
- marseille-case a{
-
-text-decoration: none;
- }
 
  
-
-
-.marseille-cases {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 27px;
-  padding: 0 0 0 0;
-}
-
-
-.housing ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 27px;
-  height: 315px;
-  flex-basis: 33.33333%;
-  padding: 0 0 0 0;
-}
-
-.marseille-case {
-  background: white;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: start;
-  border-radius: 20px;
-  border: 5px solid transparent;
-  box-shadow: 0px 0px 6px 0px #0000002e;
-}
-
-
-
-
-.marseille-case:hover {
-  cursor: pointer;
-  transform: scale(1.03);
-  transition: ease 0.4s;
-}
-
-.marseille-case .marseille-case-img {
-  width: 250px;
-  height: 100px;
-  background-size: 100% 100%;
-  border-radius: 20px 20px 20px 20px;
-}
-
-.marseille-case img {
-  width: 100%;
-  height: 100px;
-  background-size: 100% 100%;
-  border-radius: 20px 20px 20px 20px;
-  object-fit: cover;
-}
-
-.marseille-case .case-text {
-  margin: 5px;
-}
-
-.marseille-case .case-text .hotel-name {
-  margin: 0;
-}
-
-
-
-#housing-1 {
-    grid-area: housing-1;
-  }
-  #housing-2 {
-    grid-area: housing-2;
-  }
-  #housing-3 {
-    grid-area: housing-3;
-  }
-  #housing-4 {
-    grid-area: housing-4;
-  }
-  #housing-5 {
-    grid-area: housing-5;
-  }
-  #housing-6 {
-    grid-area: housing-6;
-  }
-
-
-
-  .most-popular-case-img img {
-    min-width: 80px;
-  }
-
-.show-more a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  left: 20px;
-  
-}
-
-
-
-.hebergement-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.hebergement-list a {
-    width: 30%;
-    margin-bottom: 50px;
-}
-
-.hebergement-list a article {
-    background-color: white;
-    padding: 6px;
-    border-radius: 25px;
-    height: 100%;
-}
-
-.hebergement-list a article:hover {
-    box-shadow: 5px 5px 5px 0px #E2E2E2;
-}
-
-.hebergement-list a article .fa-star.blue {
-    color: var(--blue);
-}
-
-.hebergement-list a article .fa-star.grey {
-    color: var(--grey);
-}
-
-.hebergement-list a article img {
-    width: 100%;
-    height: 200px;
-    border-radius: 25px 25px 0px 0px;
-    object-fit: cover;
-}
-
-.hebergement-list a {
-    color: black;
-    text-decoration: none;
-}
-
-.hebergement-list a article .article-content {
-    padding: 10px 10px 0px 10px;
-}
-
-.hebergement-list a article .article-content h3,
-.hebergement-list a article .article-content p {
-    margin: 6px;
-}
-
-
-}
-
-/* Fin Logements */
-
-
-/* Grid Logements / Les plus populaires */
 
 #page {
   display: grid;
@@ -577,9 +340,9 @@ text-decoration: none;
 
 }
 
-/* FIN Grid Logements / Les plus populaires */
+ FIN Grid Logements / Les plus populaires 
 
-/* Les plus populaires */
+ Les plus populaires
 #housing .populaire .chart-icone {
     position: absolute;
     top: 20px;
@@ -620,10 +383,10 @@ text-decoration: none;
     flex-direction: column;
 }
 
-/* Fin les plus populaires */
 
 
-/* Activités à Marseille */
+
+ 
 
 
 #activite {
@@ -669,14 +432,14 @@ text-decoration: none;
     height: 48%;
 }
 
-/* Fin activités */
-
-/* Les plus populaires */
 
 
 
 
-/* Pied de page */
+
+
+
+
 .colonnes
 {
 
@@ -688,117 +451,36 @@ text-decoration: none;
 .page .colonnes
 {
 
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-footer
-{
-  background-color: #e9ebe8;
-  
-  color: black;
-  margin-bottom: 1px;
- 
-
+footer {
+    background-color: #F2F2F2;
+    margin: 0px -50px;
+    padding: 50px;
+    display: flex;
 }
 
-footer .colonnes
-{
-flex-wrap: ;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+footer .column {
+    width: 30%;
 }
 
-footer .colonnes p{
-
-	color: black;
-
+footer .column ul {
+    padding: 0px;
+    list-style-type: none;
 }
 
-footer p
-{ 
-
+footer .column ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 35px;
 }
 
 
 
-/* FIN Pied de page */
-
-
-
-/* Adaptation mobile 
-
-@media screen and (max-width: 768px) {
-    header {
-        display:flex;
-        align-items: center;
-        flex-direction: column;
-        height: 100%;
-        margin: 0;
-    }
-    
-    #logo {
-        margin:25px 0px 0px 45px;
-    }
-
-    nav {
-        display: flex;
-        margin: 25px 0px 15px 0px;
-        width:100%;
-        text-align:center;
-    }
-    
-
-    #box-accommodation {
-        flex-direction: column-reverse;
-        gap: 25px;  
-    }
-
-    main 
-    {
-        margin: 0;
-    }
-
-  
-    #activités 
-    {
-      margin: 0 12px;
-    }
-
-   */
-
-
-   
-/*@media screen and (max-width: 640px)
-{
-
-	body .page{
-		margin: 10px;
-	}
-	header{
-		margin-top: 20px;
-		background-size: 250px 250px;
-
-	}
-	h1{
-		font-size: 30px;
-		padding: 100px;
-	}
-	nav .onglets{
-    display: none;
-
-	}
-}
-
-/* FIN Adaptation mobile */
-
-/* ajout papa  : 
-  la classe main-box n'étati pas définie
-  j'ai ajouté l'identifiant #hebergements-box  : car quand tu as un style qui ne doit servir qu'à un élément précis par page, il faut utiliser un identifiant plutôt qu'une classe
-  ->l'identifiant ne sert que pour un seul élément dans une page 
-*/
+/*
 
 .wrapper {
   display : inline-flex;
