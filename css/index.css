@@ -33,11 +33,7 @@
     width: 150px;
     }
 
-    nav .logo{
-    left: 0px !important;   
-    padding: 0px !important; 
-     }
-     
+  
 /* Apparence Flex */
     header nav ul {
     display: flex;

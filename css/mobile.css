@@ -1,5 +1,8 @@
 /* CSS Mobile */
 
+
+/* @media screen and (max-width: 768px) */
+
    body {
    padding: 2%;
 }
@@ -12,7 +15,6 @@ header {
 
 header #logo {
     margin: auto;
-    size-adjust: 30px;
 }
 
 header nav ul {
@@ -48,9 +50,14 @@ header nav ul {
     align-items: flex-start;
 }
 
+#housing .housing-marseille{
+   background-color: white;
+
+}
+
 #housing .housing-marseille {
     order: 2;
-
+    
 }
 
 #housing .populaire {

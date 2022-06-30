@@ -1,5 +1,7 @@
 /* CSS Tablette */
 
+/* @media screen and (max-width: 992px) */
+
 #filters {
     flex-wrap: wrap;
 }
@@ -35,4 +37,5 @@ footer {
 
 footer .column {
     width: auto;
-}                                                       
+}           
+
