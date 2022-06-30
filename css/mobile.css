@@ -1,35 +1,10 @@
 /* CSS Mobile */
 
    body {
-    padding: 0px 0px;
+   padding: 2%;
 }
 
-#housing {
-
-    padding-left: 0% !important;
-    margin-right: 0% !important;
-}
-
-#housing-marseille {
-
-    padding-left: 0% !important;
-    margin-right: 0% !important;
-}
-
-#housing .housing-marseille
-{
- padding-left: 0% !important;
-    margin-right: 0% !important;
-
-}
-
-
-
-#activite {
-
-    padding: 0%;
-    margin: 0%;
-}
+/* HEADER */
 
 header {
     flex-direction: column;
@@ -37,6 +12,7 @@ header {
 
 header #logo {
     margin: auto;
+    size-adjust: 30px;
 }
 
 header nav ul {
@@ -44,7 +20,9 @@ header nav ul {
     padding: 0;
 }
 
-header nav ul li {
+/* PADDING ET MARGIN */
+
+  header nav ul li {
     width: 50%;
     padding: 20px;
     text-align: center;
@@ -70,16 +48,17 @@ header nav ul li {
     align-items: flex-start;
 }
 
-#housing .marseille {
+#housing .housing-marseille {
     order: 2;
-   
-    
+
 }
 
 #housing .populaire {
+
     order: 1;
-    
 }
+
+
 
 #housing .housing-marseille {
    max-width: 100%; 
@@ -88,7 +67,7 @@ header nav ul li {
 .housing-marseille > div > div > a > article > img {
 
 }
-
+/* ORGANISATION / FLEX */
 
 #housing .marseille .hebergement-list {
     flex-direction: column;
@@ -112,3 +91,51 @@ footer {
     flex-direction: column;
 }
 
+footer{
+
+    padding-left: 18%;
+}
+
+
+/* PADDING ET MARGIN */
+
+#activite {
+
+    padding-left: 3%;
+    padding-right: 3%;
+    
+}
+
+#housing .populaire{
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 10%;
+}
+
+#housing .housing-marseille{
+    padding-left: 0%;
+    padding-right: 0%;
+
+}
+
+article{
+
+   
+}
+
+
+/* Les plus populaires */
+
+#housing .populaire .housing-list a article img {
+    border-radius: 25px 0px 0px 25px;
+    width: 35%;
+    height :150px;
+    width: 150px;
+    }
+
+
+.info
+{
+
+    padding-left: 5%;
+}     

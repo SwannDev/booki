@@ -2,37 +2,44 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body {
+/* Police de caractère / Taille du texte */
+    body {
     font-family: Raleway;
     margin: 0;
     padding: 0px 50px;
     font-size: 18px;
-}
+    }
 
-h1 {
+    h1 {
     font-size: 150%;
-}
+    }
 
-h2 {
+    h2 {
     font-size: 120%;
-    ;
-}
+    }
 
-header {
+                        /* --- HEADER ---*/
+    header {
     display: flex;
     justify-content: space-between;
     padding: 1px;
-}
-
-header #logo {
+    }
+/* LOGO */
+    header #logo {
     padding: 25px 0px;
-}
+    }
 
-header #logo img {
+    header #logo img {
     width: 150px;
-}
+    }
 
-header nav ul {
+    nav .logo{
+    left: 0px !important;   
+    padding: 0px !important; 
+     }
+     
+/* Apparence Flex */
+    header nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -44,65 +51,74 @@ header nav ul li {
     margin: 0px 20px 0px 20px;
 }
 
-header nav ul li:hover {
-    border-color: var(--blue);
-}
 
-header nav ul li a {
+/* Hover */
+
+    header nav ul li:hover {
+    border-color: var(--blue);
+    }
+
+    header nav ul li a {
     color: black;
     text-decoration: none;
-}
-
-header nav ul li:hover a {
+    }
+    header nav ul li:hover a {
     color: var(--blue);
-}
+    }
+
+    body .buttons .hébergements:hover
+    {
+    border-top: 3px solid;
+    font-size: 130%;
+    }
+     /* Organisation des elements */
+     header nav ul {
+     display: flex;
+     list-style-type: none;
+     margin: 0;
+     }
+
+     header nav ul li {
+     padding: 50px 25px;
+     border-top: 4px solid transparent;
+     margin: 0px 20px 0px 20px;
+     color: blue;
+      }
+                        /* --- FIN HEADER --- */
+
+                     /* --- BARRE DE RECHERCHE --- */
+
+ /* Taille et apparence  */
+   .research-box {
+   display: inline-flex;
+   flex-direction: row;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   }
+
+   .fa-map-marker-alt {
+    font-size: 17px;
+    }
 
 
-body .buttons .hébergements:hover
-{
- border-top: 3px solid;
- 
-  
-   font-size: 130%;
-}
+ .research-bar {
+  padding: 0 0 0 20px;
+  height: 50px;
+  width: 220px;
+  border: none;
+  border-top: solid 1px #F2F2F2;
+  border-bottom: solid 1px #F2F2F2;
+  }
+      
+ .research-bar::placeholder {
+  color: rgb(170, 170, 170);
+  font-size: 16px;
+  font-weight: 600;
+   }
+   
+/* Icone  */
 
-header nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-}
-
-header nav ul li {
-    padding: 50px 25px;
-    border-top: 4px solid transparent;
-    margin: 0px 20px 0px 20px;
-    color: blue;
-}
-
-
-
-
-
-nav .logo{
- left: 0px !important;
-  
- padding: 0px !important;
- 
- }
-
-
-
-
-
- 
-.research-box {
-  display: inline-flex;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.icon-location {
+  .icon-location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,26 +128,9 @@ nav .logo{
   border-radius: 14px 0 0 14px;
 }
 
-.fa-map-marker-alt {
-  font-size: 17px;
-}
+/* BOUTON  */
 
-.research-bar {
-  padding: 0 0 0 20px;
-  height: 50px;
-  width: 220px;
-  border: none;
-  border-top: solid 1px #F2F2F2;
-  border-bottom: solid 1px #F2F2F2;
-}
-
-.research-bar::placeholder {
-  color: rgb(170, 170, 170);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.button-research {
+ .button-research {
   border: none;
   border-radius: 0 14px 14px 0;
   background-color: #0065fc;
@@ -140,29 +139,31 @@ nav .logo{
   font-size: 16px;
   padding: 17px;
   cursor: pointer;
-}
+  }
+    /*HOVER  */
+     .button-research:hover {
+      background-color: #003c96;
+     transition: ease 0.3s;
+     }
 
-.button-research:hover {
-  background-color: #003c96;
-  transition: ease 0.3s;
-}
-
-
+                    /* --- FIN BARRE DE RECHERCHE ---  */
  
+                         /* --- FILTRES --- */
 
-.filters h3 {
+/* Taille et apparence  */
+  .filters h3 {
   font-size: 24px;
   display: inline;
-}
+  }
 
-.filters ul {
+  .filters ul {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-}
+  }
 
-.filters ul li {
+  .filters ul li {
   display: inline;
   margin-left: 25px;
   font-weight: 700;
@@ -170,339 +171,311 @@ nav .logo{
   padding: 0 20px 0 0;
   margin-top: 10px;
   border-radius: 200px;
-}
-
-.filters ul li:hover {
+  }
+/* Hover  */
+  .filters ul li:hover {
   cursor: pointer;
   background: #DEEBFF;
   transition-duration: 0.25s;
-}
+  }
 
-.filters ul li:hover .icon-filter {
+  .filters ul li:hover .icon-filter {
   background: white;
   transition-duration: 0.25s;
-}
-
-.icon-filter {
+  }
+/* Icone  */
+ .icon-filter {
   background-color: #DEEBFF;
   color: #0065fc;
   padding: 18px;
   border-radius: 200px;
   margin-right: 15px;
-}
-
-.info .fas {
+ }
+/* FONTAWESOME  */
+ .info .fas {
   color: #0065fc;
   font-size: 16px;
   padding: 7px 11px 7px 11px;
   border: solid 1px #D9D9D9;
   border-radius: 2000px;
   margin-right: 20px;
-}
+  }
 
- 
-
-.housing-list
-{
- 
+/* --- FIN FILTRES --- */
 
 
-}
+                 /* --- HEBERGEMENTS / HEBERGEMENTS A MARSEILLE --- */
 
-#housing {
+ /* FLEXBOX */
+    #housing {
     display: flex;
     justify-content: space-between;
     padding-left: 2.5%;
     margin-right: 50px;
-}
+    }
 
-#housing section .container {
+    #housing section .container {
     background-color: var(--grey);
     
     border-radius: 20px;
     height: calc(100% - 120px);
     box-sizing: content-box;
-}
+    }
 
-.housing-list {
+    .housing-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     
-}
+    }
 
-.housing-list a {
+
+/* Taille et apparence  */
+   .housing-list a {
     width: 30%;
     margin-bottom: 50px;
-}
+    }
 
-.housing-list a article {
+    .housing-list a article {
     background-color: white;
     padding: 6px;
     border-radius: 25px;
     height: 100%;
-}
+    }
 
-.housing-list a article:hover {
+    .housing-list a article:hover {
     box-shadow: 5px 5px 5px 0px #E2E2E2; 
 
     cursor: pointer;
-  transform: scale(1.03);
-  transition: ease 0.4s;
-}
+    transform: scale(1.03);
+    transition: ease 0.4s;
+    }
 
+    
+    .housing-list a article .article-content {
+    padding: 10px 10px 0px 10px;
+     }
 
+     .housing-list a article .article-content h3,
+     .housing-list a article .article-content p {
+    margin: 6px;
+    }
+
+    #article
+    {
+
+    max-height: 250px;
+    max-width: 250px;
+    }
+/*Titre  */
 .title-h2 push-to-right {
   display: block;
   width: 100%;
   margin-left: 40px;
 }
-
+/* Image  */
 .housing-list a article img {
     width: 100%;
     height: 200px;
     border-radius: 25px 25px 0px 0px;
     object-fit: cover;   
 }
-
-.housing-list a{
+/* Texte */
+    .housing-list a{
     color: black;
     text-decoration: none;
-}
-
-.fa-star.blue {
+    }
+/* Etoile  */
+    .fa-star.blue {
     color: var(--blue) !important;
-}
+    }
 
-.fa-star.grey {
+    .fa-star.grey {
     color: var(--grey)!important;
-}
-
-.housing-list a article .article-content {
-    padding: 10px 10px 0px 10px;
-}
-
-.housing-list a article .article-content h3,
-.housing-list a article .article-content p {
-    margin: 6px;
-}
-
-#article
-{
-
-    max-height: 250px;
-    max-width: 250px;
-}
+    }
 
 
-#housing .housing-marseille {
+
+                 /* --- HEBERGEMENTS A MARSEILLE --- */
+
+/* Taille et apparence  */
+   #housing .housing-marseille {
    max-width: 59%;
 
    background-color: #F2F2F2;
- background-size: cover;
-  border-radius: 25px 25px;
-  padding: 15px 15px;
-}
+   background-size: cover;
+   border-radius: 25px 25px;
+   padding: 15px 15px;
+   }
 
-#housing .housing-marseille .subtitle {
+    #housing .housing-marseille .subtitle {
     font-weight: bold;
     font-size: 120%;
-}
+    }
 
-
+/* Afficher Plus  */
 .show-more {
  
-  color: black;
-  font-weight: bold;
-  padding-left: 40px;
+    color: black;
+    font-weight: bold;
+    padding-left: 40px;
   
-}
+    }
 
-.show-more:hover {
+   .show-more:hover {
  
-  text-decoration: underline;
+   text-decoration: underline;
   
-}
+   }
+
+             /* --- FIN HEBERGEMENTS / HEBERGEMENTS A MARSEILLE --- */
 
 
+                 /* --- HEBERGEMENTS LES PLUS POPULAIRES --- */
 
- 
+/* Icone  */
 
-#page {
-  display: grid;
-  width: 100%;
-  height: 250px;
-  grid-template-areas: "housing-marseille populaire"
-                       "activite ";
-  
-}
-
-
-}
-
- FIN Grid Logements / Les plus populaires 
-
- Les plus populaires
-#housing .populaire .chart-icone {
+    #housing .populaire .star-icone {
     position: absolute;
     top: 20px;
     right: 20px;
-}
+    }
 
-#housing .populaire {
+    #housing .populaire .chart-icone {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    }
+/* Taille et apparence  */
+    #housing .populaire {
     width: 35%;
+
     position: relative;
-
     background-color: #F2F2F2;
- background-size: cover;
-  border-radius: 25px 25px;
-  padding: 15px 15px;
-}
+    background-size: cover;
 
-#housing .populaire .housing-list {
-    flex-direction: column;
-}
+    border-radius: 25px 25px;
+    padding: 15px 15px;
+    }
+/* Organisation des éléments  */
+      #housing .populaire .housing-list {
+      flex-direction: column;
+      }
 
-#housing .populaire .housing-list a {
-    width: 100%;
-}
+      #housing .populaire .housing-list a {
+      width: 100%;
+      }
 
-#housing .populaire .housing-list a article {
-    display: flex;
-    flex-direction: row;
-}
+      #housing .populaire .housing-list a article {
+      display: flex;
+      flex-direction: row;
+      }
+/* Taille et apparence  */
 
-#housing .populaire .housing-list a article img {
+    #housing .populaire .housing-list a article img {
     border-radius: 25px 0px 0px 25px;
     width: 35%;
-}
+    }
 
-#housing .populaire .housing-list a article .article-content {
+    #housing .populaire .housing-list a article .article-content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
+    }
+
+                /* --- FIN HEBERGEMENTS LES PLUS POPULAIRES --- */
 
 
+                         /* --- ACTIVITES --- */
 
-
- 
-
-
-#activite {
+/* Taille et apparence  */
+  #activite {
   padding-left: 2.5%;
   padding-top: 20px;
     margin-bottom: 60px;
     padding-right: 2.5%;
-}
-
-.activite-list {
+   }
+   /* Liste */
+   .activite-list {
     display: flex;
     justify-content: space-between;
     height: 600px;
-}
+    }
+/* Taille et apparence / Organisation des éléments */
 
-.activite-list .column {
+    /* Colonne */
+    .activite-list .column {
     width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 25px;
-}
+    }
+     
+   .activite-list .column article {
+   height: 100%;
+   box-shadow: 0px 0px 10px 0px #E0E0E0;
+   border-radius: 25px;
+   }
 
-.activite-list .column article img {
-    width: 100%;
-    height: calc(100% - 67px);
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
-}
+   .activite-list .column article h3 {
+   padding: 21px;
+   margin: 0px;
+   }
 
-.activite-list .column article {
-    height: 100%;
-    box-shadow: 0px 0px 10px 0px #E0E0E0;
-    border-radius: 25px;
-}
+   .activite-list .column.double article {
+   height: 48%;
+   }
 
-.activite-list .column article h3 {
-    padding: 21px;
-    margin: 0px;
-}
-
-.activite-list .column.double article {
-    height: 48%;
-}
-
-
-
-
+ /* Image  */
+      .activite-list .column article img {
+        width: 100%;
+        height: calc(100% - 67px);
+        object-fit: cover;
+        border-radius: 25px 25px 0px 0px;
+        }
+                        /* --- FIN ACTIVITES --- */
 
 
+                         /* --- FOOTER --- */
 
-
-
-.colonnes
-{
-
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-
-.page .colonnes
-{
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-footer {
+/* Taille et apparence  */
+    footer {
     background-color: #F2F2F2;
     margin: 0px -50px;
     padding: 50px;
     display: flex;
-}
-
-footer .column {
-    width: 30%;
-}
-
-footer .column ul {
-    padding: 0px;
-    list-style-type: none;
-}
-
-footer .column ul li a {
-    color: black;
-    text-decoration: none;
-    line-height: 35px;
-}
+    }
+ /* Colonne */
+     .colonnes
+     {
+     padding-left: 5%;
+     padding-right: 5%;
+     }
 
 
+     .page .colonnes
+     {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     }
 
-/*
 
-.wrapper {
-  display : inline-flex;
-}
+     /* Liste */
+     footer .column {
+     width: 30%;
+     }
 
-.main-box {
-display:  contents;
+     footer .column ul {
+     padding: 0px;
+     list-style-type: none;
+     }
 
-}
+     footer .column ul li a {
+     color: black;
+     text-decoration: none;
+     line-height: 35px;
+     }
 
-.main-box {
-  
-}
-
-#hebergements-box {
-
-}
-
-/* ligne 530 : 
-.housingpop-list {
-  display: grid ;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-*/
+                    /* --- FIN FOOTER --- */
