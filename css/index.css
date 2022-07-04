@@ -5,8 +5,8 @@
 /* Police de caractère / Taille du texte */
     body {
     font-family: Raleway;
-    margin: 0;
-    padding: 0px 50px;
+    /* margin: 0; */
+   /* padding: 0px 50px;  */
     font-size: 18px;
     }
 
@@ -147,6 +147,13 @@ header nav ul li {
                          /* --- FILTRES --- */
 
 /* Taille et apparence  */
+
+.filters{
+
+  padding-left: 2.5%;
+}
+
+
   .filters h3 {
   font-size: 24px;
   display: inline;
@@ -200,6 +207,22 @@ header nav ul li {
 /* --- FIN FILTRES --- */
 
 
+
+
+/* Contenaire hébergements et activités */
+
+.container
+{
+  
+  max-width: 100% ;
+
+}
+
+
+
+/* Contenaire hébergements et activités */
+
+
                  /* --- HEBERGEMENTS / HEBERGEMENTS A MARSEILLE --- */
 
  /* FLEXBOX */
@@ -207,7 +230,7 @@ header nav ul li {
     display: flex;
     justify-content: space-between;
     padding-left: 2.5%;
-    margin-right: 50px;
+    padding-right: 2.5%;
     }
 
     #housing section .container {
