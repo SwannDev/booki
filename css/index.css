@@ -93,6 +93,7 @@ header nav ul li {
    display: inline-flex;
    flex-direction: row;
    margin-top: 10px;
+   max-width: 100%;
    
 
    }
@@ -441,12 +442,14 @@ div.info{
   padding-top: 20px;
     margin-bottom: 60px;
     padding-right: 2.5%;
+    max-width: 100%;
    }
    /* Liste */
    .activite-list {
     display: flex;
     justify-content: space-between;
     height: 600px;
+    max-width: 100%;
     }
 /* Taille et apparence / Organisation des éléments */
 
