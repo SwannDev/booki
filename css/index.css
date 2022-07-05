@@ -5,8 +5,7 @@
 /* Police de caractère / Taille du texte */
     body {
     font-family: Raleway;
-    /* margin: 0; */
-   /* padding: 0px 50px;  */
+    
     font-size: 18px;
     }
 
@@ -18,11 +17,16 @@
     font-size: 120%;
     }
 
+    header{
+
+      padding-left: 2.5%;
+    }
+
                         /* --- HEADER ---*/
-    header {
+    .header-top {
     display: flex;
     justify-content: space-between;
-    padding: 1px;
+    
     }
 /* LOGO */
     header #logo {
@@ -150,7 +154,7 @@ header nav ul li {
 
 .filters{
 
-  padding-left: 2.5%;
+  
 }
 
 
@@ -207,7 +211,12 @@ header nav ul li {
 /* --- FIN FILTRES --- */
 
 
+/* Plus de 500 logements */
 
+div.info{
+
+  padding-bottom: 1.5%;
+}
 
 /* Contenaire hébergements et activités */
 
@@ -217,7 +226,6 @@ header nav ul li {
   max-width: 100% ;
 
 }
-
 
 
 /* Contenaire hébergements et activités */
@@ -253,6 +261,7 @@ header nav ul li {
    .housing-list a {
     width: 30%;
     margin-bottom: 50px;
+    text-decoration: none;
     }
 
     .housing-list a article {
@@ -300,11 +309,10 @@ header nav ul li {
     object-fit: cover;   
 }
 /* Texte */
-    .housing-list a{
-    color: black;
-    text-decoration: none;
-    }
+  
 /* Etoile  */
+
+
     .fa-star.blue {
     color: var(--blue) !important;
     }
@@ -318,6 +326,24 @@ header nav ul li {
                  /* --- HEBERGEMENTS A MARSEILLE --- */
 
 /* Taille et apparence  */
+
+   h3{
+
+    color: black;
+    text-decoration: none;
+   }
+
+   p{
+
+    color: black;
+   }
+
+   p.hotel-price {
+
+    color: black;
+    text-decoration: none;
+   }
+
    #housing .housing-marseille {
    max-width: 59%;
 
@@ -461,8 +487,8 @@ header nav ul li {
 /* Taille et apparence  */
     footer {
     background-color: #F2F2F2;
-    margin: 0px -50px;
-    padding: 50px;
+   padding-left: 2.5%;
+    padding-top: 50px;
     display: flex;
     }
  /* Colonne */

@@ -3,146 +3,147 @@
 
 /* @media screen and (max-width: 768px) */
 
-   body {
-   padding: 2%;
-}
+body {
+    padding: 2%;
+ }
 
-/* HEADER */
-
-header {
-    flex-direction: column;
-}
-
-header #logo {
-    margin: auto;
-}
-
-header nav ul {
-    margin: 0px -20px;
-    padding: 0;
-}
-
-/* PADDING ET MARGIN */
-
-  header nav ul li {
-    width: 50%;
-    padding: 20px;
-    text-align: center;
-    margin: 0px;
-    border-top: none;
-    border-bottom: 2px solid var(--grey);
-}
-
-.research-box button-research {
-    border-radius: 15px;
-}
-
-.research-box button-research span {
-    display: none;
-}
-
-.research-box button-research .fa-search {
-    display: block;
-}
-
-#filters {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#housing .housing-marseille{
-   background-color: white;
-
-}
-
-#housing .housing-marseille {
-    order: 2;
+ 
+ /* HEADER */
+ 
+ header {
+     flex-direction: column;
+ }
+ 
+ header #logo {
+     margin: auto;
+ }
+ 
+ header nav ul {
+     margin: 0px -20px;
+     padding: 0;
+ }
+ 
+ /* PADDING ET MARGIN */
+ 
+   header nav ul li {
+     width: 50%;
+     padding: 20px;
+     text-align: center;
+     margin: 0px;
+     border-top: none;
+     border-bottom: 2px solid var(--grey);
+ }
+ 
+ .research-box button-research {
+     border-radius: 15px;
+ }
+ 
+ .research-box button-research span {
+     display: none;
+ }
+ 
+ .research-box button-research .fa-search {
+     display: block;
+ }
+ 
+ #filters {
+     flex-direction: column;
+     align-items: flex-start;
+ }
+ 
+ #housing .housing-marseille{
+    background-color: white;
+ 
+ }
+ 
+ #housing .housing-marseille {
+     order: 2;
+     
+ }
+ 
+ #housing .populaire {
+ 
+     order: 1;
+ }
+ 
+ 
+ 
+ #housing .housing-marseille {
+    max-width: 100%; 
+ }
+ 
+ .housing-marseille > div > div > a > article > img {
+ 
+ }
+ /* ORGANISATION / FLEX */
+ 
+ #housing .marseille .hebergement-list {
+     flex-direction: column;
+ }
+ 
+ #housing .housing-marseille a {
+     width: 100%;
+ }
+ 
+ #activite .activite-list .column {
+     width: 100%;
+ }
+ 
+ .activite-list .column article,
+ .activite-list .column.double article {
+     height: 250px;
+     margin-bottom: 20px;
+ }
+ 
+ footer {
+     flex-direction: column;
+ }
+ 
+ footer{
+ 
+     padding-left: 18%;
+ }
+ 
+ 
+ /* PADDING ET MARGIN */
+ 
+ #activite {
+ 
+     padding-left: 3%;
+     padding-right: 3%;
+     
+ }
+ 
+ #housing .populaire{
+    /* padding-left: 0%;
+     padding-right: 0%;
+     padding-top: 10%;  */
+ }
+ 
+ #housing .housing-marseille{
+     padding-left: 0%;
+     padding-right: 0%;
+ 
+ }
+ 
+ article{
+ 
     
-}
-
-#housing .populaire {
-
-    order: 1;
-}
-
-
-
-#housing .housing-marseille {
-   max-width: 100%; 
-}
-
-.housing-marseille > div > div > a > article > img {
-
-}
-/* ORGANISATION / FLEX */
-
-#housing .marseille .hebergement-list {
-    flex-direction: column;
-}
-
-#housing .housing-marseille a {
-    width: 100%;
-}
-
-#activite .activite-list .column {
-    width: 100%;
-}
-
-.activite-list .column article,
-.activite-list .column.double article {
-    height: 250px;
-    margin-bottom: 20px;
-}
-
-footer {
-    flex-direction: column;
-}
-
-footer{
-
-    padding-left: 18%;
-}
-
-
-/* PADDING ET MARGIN */
-
-#activite {
-
-    padding-left: 3%;
-    padding-right: 3%;
-    
-}
-
-#housing .populaire{
-   /* padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 10%;  */
-}
-
-#housing .housing-marseille{
-    padding-left: 0%;
-    padding-right: 0%;
-
-}
-
-article{
-
-   
-}
-
-
-/* Les plus populaires */
-
-#housing .populaire .housing-list a article img {
-    border-radius: 25px 0px 0px 25px;
-    width: 35%;
-    height :150px;
-    width: 150px;
-    }
-
-
-.info
-{
-
-    padding-left: 5%;
-}     
+ }
+ 
+ 
+ /* Les plus populaires */
+ 
+ #housing .populaire .housing-list a article img {
+     border-radius: 25px 0px 0px 25px;
+     width: 35%;
+     height :150px;
+     width: 150px;
+     }
+ 
+ 
+ .info
+ {
+ 
+     padding-left: 5%;
+ }     
