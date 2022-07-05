@@ -4,13 +4,13 @@
 /* @media screen and (max-width: 768px) */
 
 body {
-    padding: 2%;
+    
  }
 
  
  /* HEADER */
  
- header {
+ .header-top {
      flex-direction: column;
  }
  
@@ -32,6 +32,11 @@ body {
      margin: 0px;
      border-top: none;
      border-bottom: 2px solid var(--grey);
+ }
+
+ .research-box{
+
+    max-width: 100%;
  }
  
  .research-box button-research {

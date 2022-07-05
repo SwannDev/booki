@@ -93,7 +93,8 @@ header nav ul li {
    display: inline-flex;
    flex-direction: row;
    margin-top: 10px;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
+
    }
 
    .fa-map-marker-alt {
@@ -364,6 +365,7 @@ div.info{
     color: black;
     font-weight: bold;
     padding-left: 40px;
+    padding-top: 2.5%;
   
     }
 
