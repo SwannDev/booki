@@ -314,14 +314,23 @@ div.info{
   
 /* Etoile  */
 
+div.stars{
 
-    .fa-star.blue {
-    color: var(--blue) !important;
-    }
+  color: inherit;
+}
 
-    .fa-star.grey {
-    color: var(--grey)!important;
-    }
+.fa-star.blue{
+ 
+  color: var(--blue) !important;
+}
+
+.fa-star.grey{
+  
+  color: var(--grey)!important;
+}
+
+  
+
 
 
 
@@ -383,11 +392,7 @@ div.info{
 
 /* Icone  */
 
-    #housing .populaire .star-icone {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    }
+   
 
     #housing .populaire .chart-icone {
     position: absolute;
