@@ -2,6 +2,17 @@
 
 /* @media screen and (max-width: 992px) */
 
+#housing .housing-marseille {
+    order: 2;
+    
+}
+
+#housing .populaire {
+
+    order: 1;
+
+}
+
 #filters {
     flex-wrap: wrap;
 }
@@ -22,6 +33,7 @@
     max-width: 100%;
     margin-bottom: auto;
     padding-bottom: 5%;
+   
 }
 
 
@@ -34,8 +46,9 @@
 
 #housing .populaire {
     width: 100%;
-    margin-bottom: auto;
+    padding-bottom: 2.5%;
     padding: 0%;
+   
 }
 
 #activite .activite-list {
