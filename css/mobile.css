@@ -37,13 +37,19 @@ header nav ul li:hover{
     
 }
 
+.housing-list a {
 
+    margin-bottom: 15px;
+    
+}
 
 .housing-list a article{
 
     padding: 0%;
-    margin-left: 12px;
-    margin-right: 12px;
+   
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 
 .IntroduceBooki{
@@ -64,23 +70,68 @@ header nav ul li:hover{
  .research-box{
 
     max-width: 97%;
+    margin-bottom: 15px;
  }
  
  .research-box button-research {
      border-radius: 15px;
+    
  }
+
+
+ .button-research{
+
+    display: none;
+ }
+
  
+ .fa-magnifying-glass {
+
+    display: block;
+    border: none;
+    border-radius: 0 14px 14px 0;
+    background-color: #0065fc;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 17px;
+    cursor: pointer;
+   }
+
 
  
  #filters {
      flex-direction: column;
      align-items: flex-start;
  }
+
+
+ div.info{
+
+    padding-bottom: 5%;
+ }
+
+
+
  
  #housing .housing-marseille{
    background-color: white;
     border-radius: 0%;
  
+ }
+
+
+ #housing .housing-marseille img{
+
+    max-height: 110px;
+
+
+ }
+
+
+ #activite img{
+
+    max-height: 130px;
  }
 
  #housing .housing-list article{
@@ -131,7 +182,7 @@ header nav ul li:hover{
  
  .activite-list .column article,
  .activite-list .column.double article {
-     height: 250px;
+     
      margin-bottom: 20px;
  }
  
@@ -155,14 +206,15 @@ header nav ul li:hover{
  
  #activite {
  
-     padding-left: 3%;
+  /*   padding-left: 3%;
      padding-right: 3%;
-    
+    */
     
     }
      #housing .housing-marseille{
 
-        padding-left: 2.5%;
+       padding: 0%;
+       margin: 0%;
      }
  
 
@@ -190,7 +242,23 @@ header nav ul li:hover{
     
  #housing .populaire h2 {
 
-    padding-left: 2.5%;
+    padding-left: 6%;
+}
+
+.housing-marseille h2{
+
+    padding-left: 6%;
+}
+
+#activite h2{
+
+    padding-left: 6%;
+}
+
+#activite .column{
+
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
