@@ -1,4 +1,6 @@
-/* Police de caractere */
+/* style.css */
+
+/*Normalize */
 
 * {
   box-sizing: border-box;
@@ -15,7 +17,12 @@
     font-size: auto;
     }
 
-                        /* --- HEADER ---*/
+/* --- HEADER ---*/
+
+
+/*Header : Nav */
+
+                        
     nav{
       display: flex;
       justify-content: space-between;
@@ -24,7 +31,7 @@
    
     
     
-/* LOGO */
+/* Header : Logo */
 
 
 header img{
@@ -35,8 +42,7 @@ header img{
 }
 
 
-  
-/* Apparence Flex */
+/* Header : Apparence + Flex */
     header nav ul {
     display: flex;
    
@@ -46,43 +52,29 @@ header nav ul li {
     width: 200px;
     text-align: center;
     padding: 30px;
+    border-top: 4px solid transparent;
 }
-
 
 /* Hover */
-header nav ul li{
-  border-top: 4px solid transparent;
-}
 
 header nav ul li:hover {
   border-color: var(--blue);
   color: blue;
   }
-
-
- 
   
- 
-  
-   
-   
-    
-     /* Organisation des elements */
+
+/* Fin Header */
 
 
-
-
+/* Organisation des elements */
 
      /* INTRODUCE BOOKI */
 
      .IntroduceBooki{
-      margin-left: 2.5%;
-     }
+        margin-left: 2.5%;
+       }
     
-    
-                        /* --- FIN HEADER --- */
-
-                     /* --- BARRE DE RECHERCHE --- */
+    /* --- BARRE DE RECHERCHE --- */
 
  /* Taille et apparence  */
    .research-box {
@@ -98,73 +90,68 @@ header nav ul li:hover {
     font-size: 17px;
     }
 
-
- .research-bar {
-  padding: 0 0 0 20px;
-  height: 50px;
-  width: 220px;
-  border: none;
-  border-top: solid 1px #F2F2F2;
-  border-bottom: solid 1px #F2F2F2;
-  }
-      
- .research-bar::placeholder {
-  color: rgb(170, 170, 170);
-  font-size: 16px;
-  font-weight: 600;
-   }
+    
+   .research-bar {
+    padding: 0 0 0 20px;
+    height: 50px;
+    width: 220px;
+    border: none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    }
+    
+    
+   .research-bar::placeholder {
+    color: rgb(170, 170, 170);
+    font-size: 16px;
+    font-weight: 600;
+    }
    
-
-
-
-
+   /* Bouton rechercher : Version mobile */
    .fa-magnifying-glass {
-
+   color: white;
+   background-color: white;
    display: none;
+   width: 0px;
  
    }
 
-/* Icone  */
+  /* Icone  */
 
   .icon-location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: auto;
-  background-color: #F2F2F2;
-  border-radius: 14px 0 0 14px;
-}
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50px;
+   height: auto;
+   background-color: #F2F2F2;
+   border-radius: 14px 0 0 14px;
+   }
 
-/* BOUTON  */
+   /* BOUTON  */
 
- .button-research {
-  border: none;
-  border-radius: 0 14px 14px 0;
-  background-color: #0065fc;
-  color: white;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 17px;
-  cursor: pointer;
-  }
+  .button-research {
+   border: none;
+   border-radius: 0 14px 14px 0;
+   background-color: #0065fc;
+   color: white;
+   font-weight: 700;
+   font-size: 16px;
+   padding: 17px;
+   cursor: pointer;
+   }
+
     /*HOVER  */
      .button-research:hover {
       background-color: #003c96;
      transition: ease 0.3s;
      }
 
-                    /* --- FIN BARRE DE RECHERCHE ---  */
+/* --- FIN BARRE DE RECHERCHE ---  */
  
-                         /* --- FILTRES --- */
+/* --- FILTRES --- */
 
-/* Taille et apparence  */
-
-.filters{
-
-  
-}
-
+    /* Taille et apparence  */
 
   .filters h3 {
   font-size: 24px;
@@ -187,6 +174,7 @@ header nav ul li:hover {
   margin-top: 10px;
   border-radius: 200px;
   }
+
 /* Hover  */
   .filters ul li:hover {
   cursor: pointer;
@@ -198,6 +186,8 @@ header nav ul li:hover {
   background: white;
   transition-duration: 0.25s;
   }
+
+
 /* Icone  */
  .icon-filter {
   background-color: #DEEBFF;
@@ -206,6 +196,8 @@ header nav ul li:hover {
   border-radius: 200px;
   margin-right: 15px;
  }
+
+
 /* FONTAWESOME  */
  .info .fas {
   color: #0065fc;
@@ -236,10 +228,7 @@ div.info{
 }
 
 
-/* Contenaire hébergements et activités */
-
-
-                 /* --- HEBERGEMENTS / HEBERGEMENTS A MARSEILLE --- */
+/* --- HEBERGEMENTS / HEBERGEMENTS A MARSEILLE --- */
 
  /* FLEXBOX */
     #housing {
@@ -303,12 +292,13 @@ div.info{
     max-height: 250px;
     max-width: 250px;
     }
-/*Titre  */
-.title-h2 push-to-right {
-  display: block;
-  width: 100%;
-  margin-left: 40px;
-}
+    /*Titre  */
+    .title-h2 push-to-right {
+    display: block;
+    width: 100%;
+    margin-left: 40px;
+    }
+
 /* Image  */
 .housing-list a article img {
     width: 100%;
@@ -316,14 +306,8 @@ div.info{
     border-radius: 25px 25px 0px 0px;
     object-fit: cover;   
 }
-/* Texte */
-  
-/* Etoile  */
 
-div.stars{
-  
- 
-}
+/* Etoile  */
 
 .fa-star.blue {
   color: #275BE6;
@@ -335,10 +319,7 @@ div.stars{
 
   
 
-
-
-
-                 /* --- HEBERGEMENTS A MARSEILLE --- */
+/* --- HEBERGEMENTS A MARSEILLE --- */
 
 /* Taille et apparence  */
 
@@ -393,20 +374,18 @@ div.stars{
   
    }
 
-             /* --- FIN HEBERGEMENTS / HEBERGEMENTS A MARSEILLE --- */
+ /* --- FIN HEBERGEMENTS / HEBERGEMENTS A MARSEILLE --- */
 
-
-                 /* --- HEBERGEMENTS LES PLUS POPULAIRES --- */
+/* --- HEBERGEMENTS LES PLUS POPULAIRES --- */
 
 /* Icone  */
-
-   
 
     #housing .populaire .chart-icone {
     position: absolute;
     top: 20px;
     right: 20px;
     }
+
 /* Taille et apparence  */
     #housing .populaire {
     width: 35%;
@@ -422,6 +401,7 @@ div.stars{
     padding-bottom: 2%;
     padding-right: 1.5%;
     }
+
 /* Organisation des éléments  */
       #housing .populaire .housing-list {
       flex-direction: column;
@@ -435,6 +415,7 @@ div.stars{
       display: flex;
       flex-direction: row;
       }
+
 /* Taille et apparence  */
 
     #housing .populaire .housing-list a article img {
@@ -448,10 +429,9 @@ div.stars{
     flex-direction: column;
     }
 
-                /* --- FIN HEBERGEMENTS LES PLUS POPULAIRES --- */
+/* --- FIN HEBERGEMENTS LES PLUS POPULAIRES --- */
 
-
-                         /* --- ACTIVITES --- */
+/* --- ACTIVITES --- */
 
 /* Taille et apparence  */
   #activite {
@@ -468,6 +448,7 @@ div.stars{
     height: 600px;
     max-width: 100%;
     }
+
 /* Taille et apparence / Organisation des éléments */
 
     /* Colonne */
@@ -501,10 +482,9 @@ div.stars{
         object-fit: cover;
         border-radius: 25px 25px 0px 0px;
         }
-                        /* --- FIN ACTIVITES --- */
+/* --- FIN ACTIVITES --- */
 
-
-                         /* --- FOOTER --- */
+/* --- FOOTER --- */
 
 /* Taille et apparence  */
     footer {

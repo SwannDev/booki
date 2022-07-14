@@ -1,6 +1,11 @@
 /* CSS Tablette */
 
-/* @media screen and (max-width: 992px) */
+/* Filtres */
+#filters {
+    flex-wrap: wrap;
+}
+
+/* Ordre section */
 
 #housing .housing-marseille {
     order: 2;
@@ -13,10 +18,8 @@
 
 }
 
-#filters {
-    flex-wrap: wrap;
-}
 
+/* Hébergements */
 #housing {
     flex-direction: column;
     max-width: 100%;
@@ -36,19 +39,19 @@
    
 }
 
-
-#activite {
-
-   padding-left: 0%;
-   padding-right: 0%; 
-   max-width: 100%;
-}
-
 #housing .populaire {
     width: 100%;
     padding-bottom: 2.5%;
     padding: 0%;
    
+}
+
+/* Activités */
+#activite{
+
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    max-width: 100%;
 }
 
 #activite .activite-list {
@@ -59,6 +62,8 @@
 #activite .activite-list .column {
     width: 48%;
 }
+
+/* Footer */
 
 footer {
     justify-content: space-between;

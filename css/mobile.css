@@ -5,18 +5,15 @@
 
 
  
- /* HEADER */
+ /* HEADER : Nav */
  
- nav img{
+nav {
+    flex-direction: column;
+   }
 
+nav img{
     margin-left: 33px;
-}
-
- nav {
-     flex-direction: column;
- }
-
-
+    }
 
  header nav ul {
     
@@ -37,37 +34,18 @@ header nav ul li:hover{
     
 }
 
-.housing-list a {
-
-    margin-bottom: 15px;
-    
-}
-
-.housing-list a article{
-
-    padding: 0%;
-   
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
+/* Filtres / Barre de recherche / Texte */
 
 .IntroduceBooki{
 
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
-
+/* Barre de recherche */
  
- /* PADDING ET MARGIN */
  
- .button-research{
-
-    
- }
-
- .research-box{
+.research-box{
 
     max-width: 97%;
     margin-bottom: 15px;
@@ -96,45 +74,55 @@ header nav ul li:hover{
     font-size: 16px;
     padding: 17px;
     cursor: pointer;
+    width: auto;
    }
 
-
+/* Filtres */
  
  #filters {
      flex-direction: column;
      align-items: flex-start;
  }
 
+/* Plus de 500 logements */
 
  div.info{
 
     padding-bottom: 5%;
  }
 
+/* Conteneur */
 
-
+.container{
+    margin: 0%;
+    }
  
- #housing .housing-marseille{
-   background-color: white;
-    border-radius: 0%;
- 
- }
+/* Hébergements */
 
+/* Article */
 
- #housing .housing-marseille img{
+article{
 
-    max-height: 110px;
-
+    margin: 1%;
 
  }
 
+.housing-list a {
 
- #activite img{
+    margin-bottom: 15px;
+    
+}
 
-    max-height: 130px;
- }
+.housing-list a article{
 
- #housing .housing-list article{
+    padding: 0%;
+   
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+#housing .housing-list article{
 
     padding-top: 5px;
     padding-left: 5px;
@@ -146,7 +134,55 @@ header nav ul li:hover{
  box-shadow: 0px 0px 10px 0px #e0e0e0;
 
  }
+
+/* Marseille */
+
+#housing .housing-marseille{
+
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .housing-marseille article{
+
+    border-radius: 25px 0px 0px 25px;
+   background-size: 2%;
+    background-color: #F2F2F2;
+ }  
+
+  .housing-marseille h2{
+
+    padding-left: 6%;
+}  
+
+#housing .housing-marseille{
+    background-color: white;
+     border-radius: 0%;
+  
+  }
  
+  #housing .housing-marseille img{
+ 
+     max-height: 110px;
+ 
+  }
+
+  #housing .housing-marseille {
+    max-width: 100%; 
+ }
+
+/* ORGANISATION / FLEX */
+ 
+#housing .marseille .hebergement-list {
+    flex-direction: column;
+}
+
+#housing .housing-marseille a {
+    width: 100%;
+}   
+ 
+/* Ordre Populaire / Marseille */  
+
  #housing .housing-marseille {
      order: 2;
      
@@ -157,25 +193,24 @@ header nav ul li:hover{
      order: 1;
  }
  
- 
- 
- #housing .housing-marseille {
-    max-width: 100%; 
+/* Activités */
+
+#activite h2{
+
+    padding-left: 6%;
+    }
+
+ #activite .column{
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ #activite img{
+
+    max-height: 130px;
  }
- 
- .housing-marseille > div > div > a > article > img {
- 
- }
- /* ORGANISATION / FLEX */
- 
- #housing .marseille .hebergement-list {
-     flex-direction: column;
- }
- 
- #housing .housing-marseille a {
-     width: 100%;
- }
- 
+
  #activite .activite-list .column {
      width: 100%;
  }
@@ -185,6 +220,8 @@ header nav ul li:hover{
      
      margin-bottom: 20px;
  }
+
+/* Footer */ 
  
  footer {
      flex-direction: column;
@@ -193,36 +230,6 @@ header nav ul li:hover{
  footer .column{
  
      margin-left: 2.5%;
- }
- 
- 
- /* PADDING ET MARGIN */
-
- article{
-
-    margin: 1%;
-
- }
- 
- #activite {
- 
-  /*   padding-left: 3%;
-     padding-right: 3%;
-    */
-    
-    }
-     #housing .housing-marseille{
-
-       padding: 0%;
-       margin: 0%;
-     }
- 
-
- 
- .container{
- margin: 0%;
-
-    
  }
  
  
@@ -244,28 +251,3 @@ header nav ul li:hover{
 
     padding-left: 6%;
 }
-
-.housing-marseille h2{
-
-    padding-left: 6%;
-}
-
-#activite h2{
-
-    padding-left: 6%;
-}
-
-#activite .column{
-
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-
- .housing-marseille article{
-
-    border-radius: 25px 0px 0px 25px;
-   background-size: 2%;
-    background-color: #F2F2F2;
- }
