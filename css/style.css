@@ -14,7 +14,6 @@
     body {
     font-family: Raleway;
     margin: 0;
-    font-size: auto;
     }
 
 /* --- HEADER ---*/
@@ -60,6 +59,7 @@ header nav ul li {
 header nav ul li:hover {
   border-color: var(--blue);
   color: blue;
+  
   }
   
 
@@ -153,6 +153,16 @@ header nav ul li:hover {
 
     /* Taille et apparence  */
 
+    .filters{
+      margin-top: 1%;
+      margin-bottom: 1%;
+      display: flex;
+      justify-content: flex-start;
+      height: auto;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
   .filters h3 {
   font-size: 24px;
   display: inline;
@@ -193,15 +203,19 @@ header nav ul li:hover {
   background-color: #DEEBFF;
   color: #0065fc;
   padding: 18px;
-  border-radius: 200px;
-  margin-right: 15px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 12px;
+  justify-content: center;
  }
 
 
 /* FONTAWESOME  */
  .info .fas {
   color: #0065fc;
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: bold;
   padding: 7px 11px 7px 11px;
   border: solid 1px #D9D9D9;
   border-radius: 2000px;
@@ -236,6 +250,7 @@ div.info{
     justify-content: space-between;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    padding-bottom: 2%;
     }
 
     #housing section .container {
@@ -382,8 +397,8 @@ div.info{
 
     #housing .populaire .chart-icone {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 6%;
+    right: 5%;
     }
 
 /* Taille et apparence  */
@@ -427,6 +442,7 @@ div.info{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding-bottom: 1%;
     }
 
 /* --- FIN HEBERGEMENTS LES PLUS POPULAIRES --- */
