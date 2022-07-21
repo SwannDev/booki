@@ -11,6 +11,9 @@
     flex-direction: column;
    }
 
+   header nav{
+    height: auto;
+   }
 nav img{
     margin-left: 33px;
     }
