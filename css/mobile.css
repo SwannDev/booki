@@ -199,6 +199,12 @@ article{
     max-width: 100%; 
  }
 
+ /* Afficher plus */
+
+ .show-more{
+    padding-left: 7%;
+ }
+
 /* ORGANISATION / FLEX */
  
 #housing .marseille .hebergement-list {
