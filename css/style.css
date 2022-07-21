@@ -95,6 +95,7 @@ header nav ul li:hover {
 
     
    .research-bar {
+    font-weight: bold;
     padding: 0 0 0 20px;
     height: 50px;
     width: 220px;
@@ -105,9 +106,9 @@ header nav ul li:hover {
     
     
    .research-bar::placeholder {
-    color: rgb(170, 170, 170);
+    color: rgb(0, 0, 0);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     }
    
    /* Bouton rechercher : Version mobile */
